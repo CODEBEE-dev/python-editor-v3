@@ -81,7 +81,7 @@ export default defineConfig(({ mode }) => {
       sourcemap: true,
     },
     server: {
-      port: 31121,
+      port: 3000,
     },
     assetsInclude: ["**/*.hex"],
     plugins: [

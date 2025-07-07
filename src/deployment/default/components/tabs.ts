@@ -12,7 +12,7 @@ const Tabs = {
       return {
         ...base,
         tablist: {
-          background: "black",
+          background: "#2f4158",
         },
         tab: {
           ...base.tab,

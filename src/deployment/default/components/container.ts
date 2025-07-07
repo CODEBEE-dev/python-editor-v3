@@ -6,7 +6,7 @@
 const Container = {
   variants: {
     "sidebar-header": {
-      bg: "black",
+      bg: "#2f4158",
       p: 0,
       maxW: "unset",
     },
