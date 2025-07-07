@@ -187,7 +187,7 @@ const SideBarHeader = ({
         >
           <Link
             display="block"
-            href={microbitOrgUrl(languageId)}
+            href="https://codebridge.ai.kr"
             target="_blank"
             rel="noopener noreferrer"
             aria-label={intl.formatMessage({ id: "visit-dot-org" })}
