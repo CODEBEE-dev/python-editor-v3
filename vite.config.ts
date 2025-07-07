@@ -65,8 +65,9 @@ const viteRemoveManifestPlugin = (): Plugin => ({
   },
 });
 
-export default defineConfig(({ mode }) => {
+export default defineConfig(({ mode, command }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
+  const isBuild = command === "build";
   const unitTest: UserConfig["test"] = {
     globals: true,
     exclude: [...configDefaults.exclude, "**/e2e/**"],
@@ -75,7 +76,7 @@ export default defineConfig(({ mode }) => {
     mockReset: true,
   };
   const config: UserConfig = {
-    base: process.env.BASE_URL ?? "/",
+    base: (isBuild) ? '/editor/microbit/' : '/',
     build: {
       outDir: "build",
       sourcemap: true,
