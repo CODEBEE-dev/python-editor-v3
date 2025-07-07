@@ -194,6 +194,26 @@ const SideBarHeader = ({
             mx="1rem"
           >
             <HStack spacing="0.875rem">
+              <div style={{
+                color: "white",
+                display: "flex",
+                alignItems: "center",
+              }}>
+                <h1 style={{
+                  fontWeight: "800",
+                  fontSize: "medium",
+                  letterSpacing: "-0.025em",
+                }}>CodeBridge</h1>
+                <span style={{
+                  marginLeft: ".5em",
+                  fontSize: "12px",
+                  fontWeight: "bold",
+                  backgroundColor: "rgba(255, 255, 255, 0.2)",
+                  boxSizing: "border-box",
+                  padding: "0 .5em",
+                  borderRadius: ".5em",
+                }}>micro:bit</span>
+              </div>
               <Box
                 width="3.56875rem"
                 color="white"
