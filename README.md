@@ -38,3 +38,10 @@ python-editor-v3 를 CodeBridge 에 맞게 커스터마이징 하는 프로젝�
     ```bash
     npm start
     ```
+
+<br />
+
+# 프로젝트 Build
+```bash
+npm run build
+```
